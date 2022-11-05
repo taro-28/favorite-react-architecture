@@ -1,0 +1,30 @@
+.header {
+  height: 5rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.avatar {
+  border-radius: 100%;
+  height: 3rem;
+  display: inline-flex;
+}
+
+.avatarMenuTriggerButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+}
+
+.avatar img {
+  border-radius: inherit;
+}

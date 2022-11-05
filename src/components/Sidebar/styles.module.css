@@ -1,0 +1,18 @@
+.sidebarItem {
+  font-size: 1.25rem;
+  padding: 0.5rem 5rem 0.5rem 2rem;
+  color: black;
+  display: block;
+}
+
+.sidebarItem:hover {
+  background-color: whitesmoke;
+}
+
+.selected {
+  background-color: lightgray;
+}
+
+.selected:hover {
+  background-color: lightgray;
+}
