@@ -1,3 +1,5 @@
+import * as Avatar from "@radix-ui/react-avatar";
+import * as Popover from "@radix-ui/react-popover";
 import Head from "next/head";
 import Link from "next/link";
 import styles from "./Home.module.css";
@@ -15,20 +17,39 @@ export default function Home() {
       <div className={styles.body}>
         <header className={styles.header}>
           <div className={styles.headerTitle}>
-            <span>Favorite React Architecture</span>
+            <Link href="/">Favorite React Architecture</Link>
           </div>
-          <div>...ComingSoon</div>
+          <div>
+            <Popover.Root>
+              <Popover.Trigger className={styles.avatarMenuTriggerButton}>
+                <Avatar.Root className={styles.avatar}>
+                  <Avatar.Image src="/icon.jpeg" />
+                  <Avatar.Fallback />
+                </Avatar.Root>
+              </Popover.Trigger>
+              <Popover.Portal>
+                <Popover.Content>
+                  <Popover.Close>Close</Popover.Close>
+                </Popover.Content>
+              </Popover.Portal>
+            </Popover.Root>
+          </div>
         </header>
         <div className={styles.container}>
           <aside className={styles.sidebar}>
             <Link href="/users">
-              <span>User</span>
+              <span>Dashboard</span>
+            </Link>
+            <Link href="/users">
+              <span>Users</span>
             </Link>
             <Link href="/settings">
-              <span>Setting</span>
+              <span>Settings</span>
             </Link>
           </aside>
-          <main>Main</main>
+          <main className={styles.main}>
+            <h1>Dashboard</h1>
+          </main>
         </div>
 
         <footer className={styles.footer}>
