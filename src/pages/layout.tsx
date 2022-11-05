@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 
 import Head from "next/head";
 import { Footer } from "../components/Footer";
@@ -10,7 +10,7 @@ type Props = {
   children: ReactNode;
 };
 
-export const GlobalLayout: FC<Props> = ({ children }) => {
+export default function GlobalLayout({ children }: Props) {
   return (
     <>
       <Head>
@@ -30,4 +30,4 @@ export const GlobalLayout: FC<Props> = ({ children }) => {
       </div>
     </>
   );
-};
+}
