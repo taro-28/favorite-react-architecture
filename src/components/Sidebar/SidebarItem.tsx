@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { FC } from "react";
 import styles from "./styles.module.css";
 
@@ -9,15 +8,8 @@ type Props = {
 };
 
 export const SidebarItem: FC<Props> = ({ pathname, children }) => {
-  const { pathname: currentPath } = useRouter();
-
-  const isSelected = currentPath === pathname;
-
   return (
-    <Link
-      href={pathname}
-      className={`${styles.sidebarItem} ${isSelected && styles.selected}`}
-    >
+    <Link href={pathname} className={styles.sidebarItem}>
       <span>{children}</span>
     </Link>
   );

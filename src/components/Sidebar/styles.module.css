@@ -8,11 +8,3 @@
 .sidebarItem:hover {
   background-color: whitesmoke;
 }
-
-.selected {
-  background-color: lightgray;
-}
-
-.selected:hover {
-  background-color: lightgray;
-}
