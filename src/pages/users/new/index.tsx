@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
-import { GlobalLayout } from "../../layout";
+import GlobalLayout from "../../layout";
 import { NextPageWithLayout } from "../../_app";
-import { UsersLayout } from "../layout";
+import UsersLayout from "../layout";
 
 const NewUserPage: NextPageWithLayout = () => {
   return <>UserCreateForm</>;

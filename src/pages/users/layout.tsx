@@ -1,11 +1,11 @@
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 import { UserTable } from "../../features/User/UserTable";
 
 type Props = {
   children: ReactNode;
 };
 
-export const UsersLayout: FC<Props> = ({ children }) => {
+export default function UsersLayout({ children }: Props) {
   return (
     <>
       <h1>Users</h1>
@@ -13,4 +13,4 @@ export const UsersLayout: FC<Props> = ({ children }) => {
       {children}
     </>
   );
-};
+}

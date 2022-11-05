@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { GlobalLayout } from "./layout";
+import GlobalLayout from "./layout";
 import { NextPageWithLayout } from "./_app";
 
 const DashboardPage: NextPageWithLayout = () => {
