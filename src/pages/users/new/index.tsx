@@ -1,10 +1,15 @@
 import { ReactElement } from "react";
+import { UserCreateForm } from "../../../features/User/UserCreateForm";
 import GlobalLayout from "../../layout";
 import { NextPageWithLayout } from "../../_app";
 import UsersLayout from "../layout";
 
 const NewUserPage: NextPageWithLayout = () => {
-  return <>UserCreateForm</>;
+  return (
+    <>
+      <UserCreateForm />
+    </>
+  );
 };
 
 NewUserPage.getLayout = function getLayout(page: ReactElement) {
