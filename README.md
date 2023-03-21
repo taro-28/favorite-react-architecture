@@ -1,4 +1,4 @@
-This is sample application of my favorite react architecture.
+This is sample app of my favorite react architecture.
 
 # Usages
 
